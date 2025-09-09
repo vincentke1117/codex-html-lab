@@ -1,0 +1,5 @@
+blank_issues_disabled: true
+contact_links:
+  - name: 📖 提交规范与贡献指南
+    url: https://github.com/<you>/codex-html-lab#-贡献指南
+    about: 在创建 Issue 前先阅读
