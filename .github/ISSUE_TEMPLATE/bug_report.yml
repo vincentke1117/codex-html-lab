@@ -1,0 +1,38 @@
+name: 🐞 Bug Report
+description: 报告一个在页面或组件中出现的问题
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么？
+      description: 清晰描述问题与出现位置（页面路径/组件名）
+      placeholder: 比如：在 /apps/playground 输入中文时，词数统计异常……
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 提供可重复的步骤
+      placeholder: |
+        1. 打开 ...
+        2. 输入 ...
+        3. 点击 ...
+        4. 看到错误 ...
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境信息
+      placeholder: OS/浏览器版本/分辨率 等
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+  - type: textarea
+    id: extra
+    attributes:
+      label: 截图或录屏（可选）
+      description: 可粘贴图片/GIF 或者拖拽上传
