@@ -1,0 +1,32 @@
+name: 🧪 Spec → App
+description: 通过规格直接生成一个可用的页面或组件
+labels: [spec-to-app]
+body:
+  - type: textarea
+    id: spec
+    attributes:
+      label: 自然语言规格（必填）
+      description: 可执行规格，便于 Codex/Copilot 直接产出
+      placeholder: |
+        功能：
+        技术边界：
+        数据/状态：
+        交互流程：
+        验收标准：
+    validations:
+      required: true
+  - type: textarea
+    id: assets
+    attributes:
+      label: 附件与素材
+      description: 需要的图标/图片/数据示例等（可选）
+  - type: textarea
+    id: checklist
+    attributes:
+      label: 交付清单（由提交者填写）
+      description: 列出文件、演示方式、已完成条目
+      placeholder: |
+        - [ ] 页面路径与名称
+        - [ ] 主要功能达成
+        - [ ] 截图或 GIF
+        - [ ] README 更新
